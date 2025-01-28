@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "icon": {
+      "type": "lucide",
+      "name": "cake"
+    },
+    "text": "24 years old"
+  },
+  {
+    "id": 2,
+    "icon": {
+      "type": "lucide",
+      "name": "earth"
+    },
+    "type": "lucide",
+    "text": "Costa Rica"
+  },
+
+  {
+    "id": 3,
+    "icon": {
+      "type": "lucide",
+      "name": "languages"
+    },
+    "type": "lucide",
+    "text": "English (proficient)"
+  },
+
+  {
+    "id": 4,
+    "icon": {
+      "type": "lucide",
+      "name": "languages"
+    },
+    "type": "lucide",
+    "text": "Spanish (native)"
+  }
+]
