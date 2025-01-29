@@ -22,8 +22,8 @@ export default defineConfig({
       name: 'Moises Segura Rojas',
       openGraph: {
         home: {
-          title: 'Spectre',
-          description: 'A minimalistic theme for Astro.'
+          title: 'moises portfolio',
+          description: 'simple portfolio using spectre'
         },
         blog: {
           title: 'Blog',
