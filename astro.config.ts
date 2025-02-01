@@ -11,7 +11,7 @@ import { spectreDark } from './src/ec-theme';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moisessegura.github.io',
-  base: '/portfolio-moises',
+  base: 'portfolio-moises',
   output: 'static',
   integrations: [
     expressiveCode({
