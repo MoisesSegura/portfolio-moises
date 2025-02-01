@@ -10,7 +10,8 @@ import { spectreDark } from './src/ec-theme';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://spectre.louisescher.dev',
+  site: 'https://moisessegura.github.io',
+  base: '/portfolio-moises',
   output: 'static',
   integrations: [
     expressiveCode({
@@ -23,11 +24,11 @@ export default defineConfig({
       openGraph: {
         home: {
           title: 'moises portfolio',
-          description: 'simple portfolio using spectre'
+          description: 'simple portfolio using astro'
         },
         blog: {
           title: 'Blog',
-          description: 'News and guides for Spectre.'
+          description: 'astro blog'
         },
         projects: {
           title: 'Projects'
