@@ -12,7 +12,6 @@ import { spectreDark } from './src/ec-theme';
 export default defineConfig({
   site: 'https://moisessegura.github.io',
   base: 'portfolio-moises',
-  output: 'static',
   integrations: [
     expressiveCode({
       themes: [spectreDark],
@@ -37,7 +36,4 @@ export default defineConfig({
     
     })
   ],
-  adapter: node({
-    mode: 'standalone'
-  })
 });
