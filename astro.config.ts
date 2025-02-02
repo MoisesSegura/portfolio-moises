@@ -4,14 +4,13 @@ import expressiveCode from 'astro-expressive-code';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import spectre from './package/src';
-
-import node from '@astrojs/node';
 import { spectreDark } from './src/ec-theme';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moisessegura.github.io',
-  base: '/portfolio-moises',
+  base: '/portfolio-moises/', 
+  output: 'static',
   integrations: [
     expressiveCode({
       themes: [spectreDark],
@@ -33,10 +32,6 @@ export default defineConfig({
           title: 'Projects'
         }
       },
-    
     })
   ],
-  adapter: node({
-    mode: 'standalone'
-  })
 });
