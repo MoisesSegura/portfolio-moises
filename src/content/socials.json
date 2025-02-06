@@ -17,5 +17,17 @@
     },
     "text": "Linkedln",
     "link": "https://www.linkedin.com/in/moises-segura-rojas-31b097273/"
+  },
+
+  {
+    "id": 3,
+    "icon": {
+      "type": "lucide",
+      "name": "mail"
+    },
+    "text": "moisessegurarojas@gmail.com",
+    "link": "mailto:moisessegurarojas@gmail.com"
   }
+
+
 ]
