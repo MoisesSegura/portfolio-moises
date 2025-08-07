@@ -26,7 +26,7 @@ const { title, description, image, pagefindIgnore, article } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/portfolio-moises/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/portfolio-moises/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 
 		<title>portfolio-moises</title>
@@ -63,7 +63,7 @@ const { title, description, image, pagefindIgnore, article } = Astro.props;
 	</head>
 	<body>
 		<main data-pagefind-ignore={pagefindIgnore}>
-			<Navbar />
+			<!-- <Navbar /> -->
 			<LayoutGrid>
 				<slot name="left" slot="left" />
 				<slot name="right" slot="right" />

@@ -76,7 +76,7 @@ const { Content: About } = await render(about!);
 			</div>
 			<div class="content-container">
 			  {projects.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).map((project) => (
-				<a href={`${project.data.link}`} class="post-container">
+				<a href={`${project.data.link}`} class="post-container"  target="_blank" rel="noopener noreferrer">
 				  <div class="post-header">
 					<h3>{project.data.title}</h3>
 					<span class="post-date">{project.data.date.toLocaleDateString()}</span>
@@ -114,7 +114,14 @@ const { Content: About } = await render(about!);
 						<span class="work-experience-duration">{entry.data.duration}</span>
 						<h3 class="work-experience-company">{entry.data.company}</h3>
 						<span class="work-experience-role">{entry.data.title}</span>
-						<p class="work-experience-desc">{entry.data.description}</p>
+						<p class="work-experience-desc">
+						{entry.data.description.split('\n').map((line) => (
+							<Icon type='lucide' name="dot" width={20} height={20} class='glow-icon' />
+							<>
+							{line}<br />
+							</>
+						))}
+						</p>
 					</div>
 				))}
 			</div>

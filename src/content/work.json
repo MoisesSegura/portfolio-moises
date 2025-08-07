@@ -4,6 +4,7 @@
     "duration": "July 2023 - February 2024",
     "company": "Jack Developer",
     "title": "Web Developer",
-    "description": "Migrated a webpage, optimized performance, improved UI/UX, developed backend, built a back office, enabled multilingual support, and optimized the SQL database."
+    "description": "Developed a website from scratch using Laravel, JavaScript, HTML, and Tailwind CSS, replicating and enhancing the original design.\nOptimized MySQL database performance, reducing query response times by 30%.\nAdded multilingual support (Spanish, English, Portuguese).\nBuilt a backoffice system using 'Filament' a laravel package for efficient content management.\nImproved UI/UX with a modern, responsive design.\nAssisted in gathering and documenting business requirements in stakeholder sessions."
+
   }
 ]
