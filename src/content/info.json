@@ -3,9 +3,9 @@
     "id": 1,
     "icon": {
       "type": "lucide",
-      "name": "cake"
+      "name": "code"
     },
-    "text": "24 years old"
+    "text": "web developer"
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
       "name": "languages"
     },
     "type": "lucide",
-    "text": "English (B1)"
+    "text": "English (B2)"
   },
 
   {

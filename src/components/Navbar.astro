@@ -5,10 +5,11 @@ import { name } from 'spectre:globals';
 const path = Astro.url.pathname;
 ---
 <nav>
-  <a class="site-title" href="/">{name}</a>
+  <a class="site-title" href="/"></a>
   <ul>
-   
-  
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/contact">Contact</a></li>
   </ul>
   <button class="mobile-nav-toggle">
     <Icon type="lucide" name="menu" width={24} height={24} class="menu-closed" />
