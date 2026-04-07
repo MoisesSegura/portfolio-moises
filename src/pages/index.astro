@@ -57,6 +57,18 @@ const { Content: About } = await render(about!);
 				))}
 			</ul>
 		</Card>
+
+		<Card>
+			<ul class="overview-list">
+					<li>
+						<a href="/portfolio-moises/Moises_Segura_CV.pdf" download class="btn">
+						<Icon type="lucide" name="download" width={24} height={24} />
+						<span>Download CV</span>
+						</a>
+					</li>
+			</ul>
+		</Card>
+
 	</div>
 	<div class="layout-grid-right" slot="right">
 		<Card>
@@ -66,6 +78,38 @@ const { Content: About } = await render(about!);
 			</div>
 			<div class="prose">
 				<About />
+			</div>
+		</Card>
+
+		<Card>
+			<div class="header-container">
+				<Icon type='lucide' name="code-xml" width={24} height={24} class='glow-icon' />
+				<h2>Technologies</h2>
+			</div>
+			<div class="prose">
+			<div class="tech-tags">
+			<div class="tag">
+				<Icon type="simple-icons" name="laravel"  width={24} height={24} />
+				<span>Laravel</span>
+			</div>
+
+			<div class="tag">
+				<Icon type="simple-icons" name="vuedotjs"  width={24} height={24} />
+				<span>Vue</span>
+			</div>
+				<div class="tag">
+				<Icon type="simple-icons" name="javascript"  width={24} height={24} />
+				<span>javascript</span>
+			</div>
+				<div class="tag">
+				<Icon type="simple-icons" name="mysql"  width={24} height={24} />
+				<span>MySQL</span>
+			</div>
+				<div class="tag">
+				<Icon type="simple-icons" name="astro"  width={24} height={24} />
+				<span>Astro</span>
+			</div>
+			</div>
 			</div>
 		</Card>
 	
@@ -91,16 +135,20 @@ const { Content: About } = await render(about!);
           <span>{project.data.description}</span>
 
           <div class="actions">
-			<a href={project.data.link} target="_blank" class="btn">
-				<Icon type="lucide" name="external-link" width={24} height={24} />
-				<span>View Project</span>
-			</a>
+  {project.data.link && (
+    <a href={project.data.link} target="_blank" class="btn">
+      <Icon type="lucide" name="external-link" width={24} height={24} />
+      <span>View Project</span>
+    </a>
+  )}
 
-			<a href={project.data.repo} target="_blank" class="btn">
-				<Icon type="lucide" name="github" width={24} height={24} />
-				<span>View Code</span>
-			</a>
-			</div>
+  {project.data.repo && (
+    <a href={project.data.repo} target="_blank" class="btn">
+      <Icon type="lucide" name="github" width={24} height={24} />
+      <span>View Code</span>
+    </a>
+  )}
+</div>
 
         </div>
       ))}

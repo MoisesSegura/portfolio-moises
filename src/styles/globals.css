@@ -189,3 +189,26 @@ main {
 .btn:hover {
   background-color: #1f1f1f;
 }
+
+.tech-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid #353535;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  background-color: #181818;
+}
+
+
+.tag:hover {
+  border-color: var(--primary);
+}
