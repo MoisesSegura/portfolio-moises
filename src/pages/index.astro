@@ -82,36 +82,76 @@ const { Content: About } = await render(about!);
 		</Card>
 
 		<Card>
-			<div class="header-container">
-				<Icon type='lucide' name="code-xml" width={24} height={24} class='glow-icon' />
-				<h2>Technologies</h2>
-			</div>
-			<div class="prose">
-			<div class="tech-tags">
-			<div class="tag">
-				<Icon type="simple-icons" name="laravel"  width={24} height={24} />
-				<span>Laravel</span>
-			</div>
+  <div class="header-container">
+    <Icon type='lucide' name="code-xml" width={24} height={24} class='glow-icon' />
+    <h2>Technologies</h2>
+  </div>
 
-			<div class="tag">
-				<Icon type="simple-icons" name="vuedotjs"  width={24} height={24} />
-				<span>Vue</span>
-			</div>
-				<div class="tag">
-				<Icon type="simple-icons" name="javascript"  width={24} height={24} />
-				<span>javascript</span>
-			</div>
-				<div class="tag">
-				<Icon type="simple-icons" name="mysql"  width={24} height={24} />
-				<span>MySQL</span>
-			</div>
-				<div class="tag">
-				<Icon type="simple-icons" name="astro"  width={24} height={24} />
-				<span>Astro</span>
-			</div>
-			</div>
-			</div>
-		</Card>
+  <div class="tech-section">
+
+    <!-- Backend -->
+    <div class="tech-group">
+      <h3>Backend</h3>
+      <div class="tech-tags">
+        <div class="tag">
+          <Icon type="simple-icons" name="laravel" />
+          <span>Laravel</span>
+        </div>
+        <div class="tag">
+          <Icon type="simple-icons" name="php" />
+          <span>PHP</span>
+        </div>
+        <div class="tag">
+          <Icon type="simple-icons" name="mysql" />
+          <span>MySQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="tech-group">
+      <h3>Frontend</h3>
+      <div class="tech-tags">
+        <div class="tag">
+          <Icon type="simple-icons" name="vuedotjs" />
+          <span>Vue</span>
+        </div>
+        <div class="tag">
+          <Icon type="simple-icons" name="javascript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="tag">
+          <Icon type="simple-icons" name="astro" />
+          <span>Astro</span>
+        </div>
+        <div class="tag">
+          <Icon type="simple-icons" name="tailwindcss" />
+          <span>Tailwind</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="tech-group">
+      <h3>Tools</h3>
+      <div class="tech-tags">
+        <div class="tag">
+          <Icon type="simple-icons" name="git" />
+          <span>Git</span>
+        </div>
+        <div class="tag">
+          <Icon type="simple-icons" name="docker" />
+          <span>Docker</span>
+        </div>
+        <div class="tag">
+          <Icon type="simple-icons" name="linux" />
+          <span>Linux</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Card>
 	
 		<Card>
 			<div class="header-container">
